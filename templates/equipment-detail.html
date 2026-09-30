@@ -1,0 +1,18 @@
+<!-- Development template only. This file is not linked from the public site. -->
+<section class="page-hero page-hero--compact">
+  <div class="page-hero__media"><img src="{{ primary_image_url }}" alt="{{ brand }} {{ model }}"></div>
+  <div class="page-hero__overlay"></div>
+  <div class="container page-hero__content">
+    <div class="eyebrow">Used Equipment · {{ status }}</div>
+    <h1>{{ brand }} {{ model }}</h1>
+    <p>{{ short_description_if_known }}</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="{{ inquiry_anchor }}">Ask About This Equipment</a>
+      <a class="btn btn--light" href="/used-equipment/">Back to Inventory</a>
+    </div>
+  </div>
+</section>
+<!-- Detail implementation should conditionally render only real fields:
+price, condition, quantity, year, service history, reconditioning, warranty,
+dimensions, availability, delivery availability, installation availability,
+description, gallery images. Never show empty labels / NULL / undefined. -->

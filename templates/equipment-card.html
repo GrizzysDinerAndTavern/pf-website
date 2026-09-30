@@ -1,0 +1,21 @@
+<!-- Development template only. Render only real fields; omit unknown values. -->
+<article class="equipment-card">
+  <div class="equipment-card__media">
+    <img src="{{ image_url }}" alt="{{ brand }} {{ model }}" loading="lazy">
+    <span class="status-badge status-badge--{{ status_slug }}">{{ status }}</span>
+  </div>
+  <div class="equipment-card__body">
+    <div class="equipment-card__brand">{{ brand }}</div>
+    <h3>{{ model }}</h3>
+    <div class="equipment-meta">
+      <!-- Conditionally render only known fields. -->
+      {{ category_if_known }}
+      {{ condition_if_known }}
+      {{ price_if_known }}
+      {{ quantity_if_known }}
+    </div>
+    <div class="equipment-card__cta">
+      <a class="btn btn--dark" href="{{ detail_url }}">Ask About This Equipment</a>
+    </div>
+  </div>
+</article>
