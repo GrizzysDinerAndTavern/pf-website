@@ -1,3 +1,5 @@
+THIS IS THE ORIGINAL SITE, CAME FROM LOCAL
+
 # Priority Fitness Front-End Website
 
 This package is a complete static front-end build for the Priority Fitness website brief. It is intentionally focused on design, UX, responsive behavior, real supplied assets, and front-end interactions. It does **not** implement CRM, GoHighLevel, analytics, tracking, schema, ad pixels, backend APIs, or live form submission.
